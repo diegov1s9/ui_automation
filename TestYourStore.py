@@ -17,6 +17,7 @@ class TestYourStore:
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument("window-size=1920x1080")
+        chrome_options.add_argument("--start-maximized")
         
         service = Service('/usr/bin/chromedriver') 
         cls.driver = webdriver.Chrome(service=service, options=chrome_options)
