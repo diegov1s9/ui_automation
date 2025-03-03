@@ -27,7 +27,7 @@ jobs:
         
     - name: Run tests
       run: |
-        pytest -v --html=report.html --self-contained-html
+        pytest TestYourStore.py -v --html=report.html --self-contained-html
         
     - name: Upload test report
       if: always()
